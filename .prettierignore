@@ -1,0 +1,15 @@
+# Ignore build output
+build
+
+
+# Ignore coverage reports
+coverage
+
+# Ignore node_modules
+node_modules
+
+# Ignore package-lock.json
+package-lock.json
+
+# Ignore .env files
+.env*

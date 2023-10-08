@@ -22,6 +22,7 @@
     "commit": "cz"
   },
   "peerDependencies": {
+    "axios": ">=1.5",
     "react": ">=16"
   },
   "husky": {
@@ -53,6 +54,7 @@
     "@size-limit/preset-small-lib": "^9.0.0",
     "@types/react": "^18.2.25",
     "@types/react-dom": "^18.2.11",
+    "axios": "^1.5.1",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^8.0.3",
     "react": "^18.2.0",
