@@ -18,14 +18,16 @@
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "commit": "cz"
   },
   "peerDependencies": {
     "react": ">=16"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "tsdx lint"
+      "pre-commit": "tsdx lint",
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
     }
   },
   "prettier": {
@@ -51,17 +53,23 @@
     "@size-limit/preset-small-lib": "^9.0.0",
     "@types/react": "^18.2.25",
     "@types/react-dom": "^18.2.11",
+    "cz-conventional-changelog": "^3.3.0",
     "husky": "^8.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "semantic-release": "^22.0.5",
     "size-limit": "^9.0.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.6.2",
-    "typescript": "^5.2.2",
-    "semantic-release": "^22.0.5"
+    "typescript": "^5.2.2"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/GagikNav/use-axios-interceptor.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
