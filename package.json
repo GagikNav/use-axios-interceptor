@@ -18,7 +18,7 @@
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "semantic-release": "semantic-release",
+    "semantic-release": "semantic-release --branch main",
     "commit": "cz"
   },
   "peerDependencies": {
@@ -71,10 +71,5 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "release": {
-    "branches": [
-      "main"
-    ]
   }
 }
