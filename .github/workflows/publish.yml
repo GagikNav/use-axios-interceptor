@@ -37,7 +37,8 @@ jobs:
       matrix:
         node-version: [18.x]
         os: [ubuntu-latest]
-
+    permissions:
+       contents: write
     needs: [quality]
     steps:
       - uses: actions/checkout@v3
